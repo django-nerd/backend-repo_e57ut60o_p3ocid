@@ -1,15 +1,15 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [144] using StatReload
-INFO:     Started server process [146]
+INFO:     Started reloader process [186] using StatReload
+INFO:     Started server process [188]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:59362 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:59376 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:59376 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:41730 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54890 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:54890 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52592 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:49820 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:42540 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:44762 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:44772 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:44772 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43982 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58704 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:58704 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:36710 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:36344 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45452 - "GET /rates HTTP/1.1" 200 OK
