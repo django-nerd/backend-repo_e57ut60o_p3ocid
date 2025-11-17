@@ -1,20 +1,38 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [301] using StatReload
-INFO:     Started server process [303]
+INFO:     Started reloader process [399] using StatReload
+INFO:     Started server process [401]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:52182 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:52196 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52196 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:48550 - "GET /ticker HTTP/1.1" 200 OK
-INFO:     172.20.0.1:48550 - "GET /ticker HTTP/1.1" 200 OK
-INFO:     172.20.0.1:36710 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:36710 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:36700 - "GET /ticker HTTP/1.1" 200 OK
-INFO:     172.20.0.1:36700 - "GET /ticker HTTP/1.1" 200 OK
-INFO:     172.20.0.1:41350 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:41362 - "GET /ticker HTTP/1.1" 200 OK
-INFO:     172.20.0.1:50546 - "GET /rates HTTP/1.1" 200 OK
-INFO:     172.20.0.1:57864 - "GET /ticker HTTP/1.1" 200 OK
-INFO:     172.20.0.1:39096 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59174 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59196 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59208 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59214 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:59196 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59208 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59224 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59240 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59224 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59240 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59174 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59190 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59174 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:59190 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34620 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34636 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34664 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34666 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34664 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34666 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34648 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34650 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:34650 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38136 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38152 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38676 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38694 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38690 - "GET /ticker HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35340 - "GET /hubs HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35352 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35356 - "GET /rates HTTP/1.1" 200 OK
+INFO:     172.20.0.1:35364 - "GET /hubs HTTP/1.1" 200 OK

@@ -12,7 +12,7 @@ Model name is converted to lowercase for the collection name:
 """
 
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, List
 
 # Example schemas (replace with your own):
 
@@ -37,6 +37,20 @@ class Product(BaseModel):
     price: float = Field(..., ge=0, description="Price in dollars")
     category: str = Field(..., description="Product category")
     in_stock: bool = Field(True, description="Whether product is in stock")
+
+# TCR Finance: Liquidity hub telemetry schema
+class Hub(BaseModel):
+    """
+    Liquidity hubs telemetry per region
+    Collection name: "hub"
+    """
+    id: str = Field(..., description="Stable identifier (e.g., saopaulo)")
+    name: str = Field(..., description="Display name")
+    country: str = Field(..., description="Country/region label")
+    volume24h: float = Field(..., ge=0, description="24h notional volume in BRL")
+    latencyMs: int = Field(..., ge=0, description="Median desk latency in milliseconds")
+    pairs: List[str] = Field(default_factory=list, description="Supported pairs")
+    status: str = Field("Online", description="Operational status")
 
 # Add your own schemas here:
 # --------------------------------------------------
