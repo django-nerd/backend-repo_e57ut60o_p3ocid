@@ -1,8 +1,10 @@
 import os
+import random
+from datetime import datetime, timezone
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI()
+app = FastAPI(title="TCR Finance API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -14,11 +16,37 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from FastAPI Backend!"}
+    return {"message": "TCR Finance Backend Running"}
 
 @app.get("/api/hello")
 def hello():
     return {"message": "Hello from the backend API!"}
+
+@app.get("/rates")
+def get_rates():
+    """
+    Return indicative rates for USDT ⇄ BRL. These are demo quotes with light jitter.
+    """
+    # Base rates (indicative)
+    base_usdt_to_brl = 5.40  # BRL you get for 1 USDT
+    base_brl_to_usdt = 1 / 5.48  # USDT you get for 1 BRL (includes spread)
+    base_spread_bps = 45  # basis points
+
+    # Add small random jitter to simulate live movement
+    jitter_brl = random.uniform(-0.03, 0.03)
+    jitter_usdt = random.uniform(-0.0002, 0.0002)
+    jitter_bps = random.randint(-5, 5)
+
+    usdt_to_brl = max(0.0, base_usdt_to_brl + jitter_brl)
+    brl_to_usdt = max(0.0, base_brl_to_usdt + jitter_usdt)
+    spread_bps = max(0, base_spread_bps + jitter_bps)
+
+    return {
+        "usdt_to_brl": usdt_to_brl,
+        "brl_to_usdt": brl_to_usdt,
+        "spread_bps": spread_bps,
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+    }
 
 @app.get("/test")
 def test_database():
